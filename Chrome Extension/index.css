@@ -19,12 +19,12 @@ button {
     font-weight: bold;
 }
 
-#input-btn{
+#input-btn, #tab-btn{
   background: #5f9341;
   border: 2px solid darkgreen;
 }
 
-#input-btn:hover{
+#input-btn:hover, #tab-btn:hover{
   background: white;
     color: #5f9341;
 }
