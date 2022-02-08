@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
+  min-width: 350px;
 }
 
 input {
@@ -13,9 +14,49 @@ input {
 }
 
 button {
-    background: #5f9341;
     color: white;
     padding: 10px 20px;
-    border: none;
     font-weight: bold;
+}
+
+#input-btn{
+  background: #5f9341;
+  border: 2px solid darkgreen;
+}
+
+#input-btn:hover{
+  background: white;
+    color: #5f9341;
+}
+
+#delete-btn{
+  background: orange;
+  border: 2px solid tomato;
+}
+#delete-btn:hover{
+  background: white;
+  color: orange;
+}
+
+ul {
+  margin-top: 20px;
+  list-style: none;
+  padding-left: 0;
+  
+}
+ul li::before {
+  content: "";
+  background-image: url(https://img.icons8.com/external-flat-juicy-fish/60/000000/external-link-contact-us-flat-flat-juicy-fish.png);
+  background-size: contain;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  top: 0.1rem;
+  margin-right: 0.2rem;
+  margin-top: 0.2rem
+}
+
+li a {
+    color: #5f9341;
 }
