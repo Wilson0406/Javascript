@@ -1,46 +1,63 @@
-<div class="invoice-card">
-  <div class="invoice-title">
-    <div id="main-title">
-      <h4 id="invoice">Invoice Creater</h4>
-      <span>Thanks for choosing PRAYAS Corp</span>
-    </div>
-    
-    <span id="date">16/02/2019</span>
-  </div>
-  
-  <div class="invoice-details">
-    <table class="invoice-table">
-      <thead>
-        <tr>
-          <td>Task</td>
-          <td>UNIT</td>
-          <td>Total</td>
-        </tr>
-      </thead>
-      
-      <tbody>
-        <tr class="row-data">
-          <td>Wash Car <span>(full)</span></td>
-          <td id="unit">1</td>
-          <td>2.90</td>
-        </tr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+</link>-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generation App</title>
+</head>
+<body>
+    <div class="invoice-card">
+        <div class="invoice-title">
+          <div id="main-title">
+            <h4 id="invoice">Invoice Creater</h4>
+          </div>
+          <span id="tag">Thanks for choosing PRAYAS Corp</span>
+        </div>
         
-        <tr class="row-data">
-          <td>Mow Lawn <span>(full)</span></td>
-          <td id="unit">2</td>
-          <td>7.00</td>
-        </tr>
+        <div class="services">
+          <table class="service-table">
+            <tr>
+                <td><button class="btn service-btn" id="wash">Wash Car: $10</button></td>
+                <td><button class="btn service-btn" id="mow">Mow Lawn: $20</button></td>
+                <td><button class="btn service-btn" id="weed">Pull Weeds: $30</button></td>
+            </tr>
+          </table>
+        </div>
         
-        <tr class="calc-row">
-          <td colspan="2">Total</td>
-          <td>9.00</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  
-  <div class="invoice-footer">
-    <!--<button class="btn btn-secondary" id="later">LATER</button>-->
-    <button class="btn btn-primary">Send Invoice</button>
-  </div>
-</div>
+        <div class="invoice-details">
+          <table class="invoice-table">
+            <thead>
+              <tr>
+                <td>Task</td>
+                <td colspan="2">Total</td>
+              </tr>
+            </thead>
+            
+            <tbody id="input">
+              <!--<tr class="row-data">
+                <td colspan="2">Wash Car <span> Remove</span></td>
+                <td>$10</td>
+              </tr>
+              
+              <tr class="row-data">
+                <td colspan="2">Mow Lawn <span> Remove</span></td>
+                <td>$20</td>
+              </tr>-->
+              
+              <tr class="calc-row">
+                <td colspan="2">Total</td>
+                <td>$30</td>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="invoice-footer">
+          <button class="btn btn-primary"><i class="fas fa-hand-holding-usd"></i>  Send Invoice</button>
+        </div>
+      </div>
+</body>
+</html>
