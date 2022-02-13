@@ -1,1 +1,128 @@
+body {
+      font-family: "Press Start 2p", Fantasy;  
+  //font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
+    //background-color: hotpink;  
+    background-image: url("https://t4.ftcdn.net/jpg/00/66/74/33/360_F_66743372_jgNeeAF4lIo8V53PLdBMuoW3e8XRAJjk.jpg");
+    background-size: cover;
+    padding: 20px 0;
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.5;
+}
 
+.background{
+  background-color: grey;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.75;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+h1{
+  color: white;
+  font-size: 2.2rem;
+}
+
+span {
+    border-bottom: 2px solid black;
+    padding: 4px;
+}
+
+button {
+    margin: 20px 0;
+    background: Green;
+    color: white;
+    border: 2px solid black;
+    //border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 8px;
+}
+
+.flex {
+    display: flex;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.shadow {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.br-10 {
+    border-radius: 10px;    
+}
+
+/* end of utility classes */
+
+.container {
+    height: 100vh;
+    flex-direction: column;
+}
+
+.hand {
+    margin: 0.5rem;
+    height: 60px;
+    width: 60px;
+    background: whitesmoke;
+}
+
+.winner-text {
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.winner {
+    border: 5px solid green;
+    transform: scale(1.125)
+}
+
+.draw {
+    border: 5px solid orange;
+    transform: scale(1.125);
+}
+
+.margin{
+  margin: 7px;
+}
+
+#rock{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+#rock:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+#paper{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+#paper:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+#scissors{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+#scissors:hover {
+  background-color: #008CBA;
+  color: white;
+}
